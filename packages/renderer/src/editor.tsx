@@ -19,7 +19,7 @@ if(editorView) {
   // do nothing
 }
   }, [editorView])
-  return <div className="editor-wrapper" ref={refContainer}></div>;
+  return <div id="edit-area" className="editor-wrapper" ref={refContainer}></div>;
 }
 
 export default Editor;

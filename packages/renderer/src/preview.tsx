@@ -28,6 +28,6 @@ const Preview: FC<Props> = (props) => {
       code: RemarkCode
     }
   }).processSync(props.doc).result
-  return <div className="preview markdown-body">{md}</div>
+  return <div id="preview-area" className="preview markdown-body">{md}</div>
 }
 export default Preview
