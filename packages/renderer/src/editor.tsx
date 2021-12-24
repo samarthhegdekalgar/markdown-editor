@@ -17,6 +17,7 @@ const Editor: React.FC<Props> = (props) => {
   useEffect(() => {
 if(editorView) {
   // do nothing
+
 }
   }, [editorView])
   return <div id="edit-area" className="editor-wrapper" ref={refContainer}></div>;

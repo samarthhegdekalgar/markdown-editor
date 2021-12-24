@@ -1,0 +1,8 @@
+.tab-bar {
+  display: flex;
+  height: 36px;
+  overflow: hidden;
+  flex-direction: row;
+  background-color: rgb(17, 19, 22);
+  padding-left: 48px;
+}

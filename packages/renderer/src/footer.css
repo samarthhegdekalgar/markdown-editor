@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  height: 24px;
+  overflow: hidden;
+  flex-direction: row;
+  background-color: #007acc;
+}

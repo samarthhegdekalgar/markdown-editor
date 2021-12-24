@@ -70,9 +70,10 @@ const useCodeMirror = <T extends Element>(props: Props): [React.MutableRefObject
         EditorView.updateListener.of(update => {
           if(update.changes) {
             onChange && onChange(update.state);
+
           }
         })
-      ]
+      ],
     })
     const view = new EditorView({state: startState, parent: refContainer.current})
     setEditorView(view)
