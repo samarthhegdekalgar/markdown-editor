@@ -4,4 +4,11 @@
   overflow: hidden;
   flex-direction: row;
   background-color: #007acc;
+  align-items: center;
+  color: white;
+  justify-content: end;
+  padding: 0px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
 }

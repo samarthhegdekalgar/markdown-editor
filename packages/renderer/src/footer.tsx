@@ -1,7 +1,11 @@
 import type { FC } from "react";
 import React from 'react'
 import './footer.css'
-const Footer: FC = () => {
-  return <div className="footer"></div>
+
+interface FooterProps {
+  cursorPosition: string;
+}
+const Footer: FC<FooterProps> = ({cursorPosition}: FooterProps) => {
+  return <div className="footer">{cursorPosition}</div>
 }
 export default Footer

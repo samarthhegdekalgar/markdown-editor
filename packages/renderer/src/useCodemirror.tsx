@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
-import { EditorState } from "@codemirror/state";
-import { EditorView, keymap, highlightActiveLine } from "@codemirror/view";
+import { EditorState  } from "@codemirror/state";
+import { EditorView, keymap, highlightActiveLine  } from "@codemirror/view";
 import { defaultKeymap } from "@codemirror/commands";
 import { history, historyKeymap } from "@codemirror/history";
 import { indentOnInput } from "@codemirror/language";
@@ -70,7 +70,6 @@ const useCodeMirror = <T extends Element>(props: Props): [React.MutableRefObject
         EditorView.updateListener.of(update => {
           if(update.changes) {
             onChange && onChange(update.state);
-
           }
         })
       ],

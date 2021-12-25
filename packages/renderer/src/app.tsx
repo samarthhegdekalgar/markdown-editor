@@ -10,16 +10,20 @@ import Footer from "./footer";
 
 const App: FC = () => {
   const [doc, setDoc] = useState<string>(example2);
+  const [cursorPosition, setCursorPosition] = useState<string>("");
   useSyncScroll()
 
   return(
     <div className="layout">
       <div className="app">
         <Menu />
-        <Editor onChange={setDoc} initialDoc={doc}/>
+        <Editor onChange={(docValue, curPos) => {
+          setDoc(docValue)
+          setCursorPosition(curPos)
+          }} initialDoc={doc}/>
         <Preview doc={doc}/>
       </div>
-      <Footer />
+      <Footer cursorPosition={cursorPosition}/>
     </div>
   )
 }
